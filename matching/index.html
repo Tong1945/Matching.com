@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1 id="delayedText">Welcome to Matching.com</h1>
+        <a href="index2.html"><button type="button" id="delayedButton">Start matching</button></a>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(function() {
+                    var text = document.getElementById('delayedText');
+                    var btn = document.getElementById('delayedButton');
+                    if (text) text.classList.add('visible');
+                    if (btn) btn.classList.add('visible');
+                }, 500);
+            });
+        </script>
+</body>
+</html>

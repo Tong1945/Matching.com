@@ -1,0 +1,80 @@
+body {
+  font-family: Roboto Mono, monospace;
+  padding: 2rem;
+  background-color: black;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 130px;
+  text-shadow: 10px 10px 22px #313131;
+  margin-top: 250px;
+}
+
+
+/* Button look and layout */
+#delayedButton {
+  display: inline-block;
+  margin: 1.5rem auto 0;
+  padding: 0.9rem 1.6rem;
+  background: white;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  font-size: 2rem;
+  font-family: Roboto Mono, monospace;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  box-align: center;
+  margin-left: 36%;
+  margin-top: 10%;
+  height: 100px;
+  width: 500px;
+}
+
+#delayedButton:focus { outline: 2px solid rgba(255,255,255,0.15); }
+
+#delayedButton:hover {
+  background: black;
+  color: white;
+  box-shadow: 10px 10px 22px rgba(29, 29, 29, 0.55);
+  border-color: white;
+  border: 1px solid white;
+}
+
+#delayedText {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 600ms cubic-bezier(.2,.8,.2,1), transform 600ms cubic-bezier(.2,.8,.2,1);
+  will-change: opacity, transform;
+}
+
+#delayedText.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#delayedButton {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 600ms cubic-bezier(.2,.8,.2,1), transform 600ms cubic-bezier(.2,.8,.2,1);
+  will-change: opacity, transform;
+}
+
+#delayedButton.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #delayedText {
+    transition: none;
+    transform: none;
+  }
+  #delayedButton {
+    transition: none;
+    transform: none;
+  }
+}

@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    font-family: Roboto Mono, monospace;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 10px 10px 22px #313131;
+}
+
+p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Roboto Mono, monospace;
+}
+
+
+.window{
+    border: 10px solid white;
+    width: 500px;
+    height: 500px;
+    margin-top: 3%;
+    margin-left: 15%;
+    float: left;
+}
+
+.window:hover {
+    box-shadow: 10px 10px 22px #313131;
+    cursor: pointer;
+}
+
+.img{
+    width: 498px;
+    height: 350px;
+    padding-top: 1px;
+    padding-left: 1px;
+}
+
+h3{
+    color: white;
+    text-align: center;
+    margin-top: 11%;
+    font-size: 30px;
+}
